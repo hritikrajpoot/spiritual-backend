@@ -1,153 +1,302 @@
-{
-  "inner_peace": {
-    "buddha": "Peace comes from within. Do not seek it without.",
-    "gita": "One who is not disturbed by joy or sorrow is steady in mind.",
-    "jesus": "My peace I give you. Do not let your hearts be troubled.",
-    "quran": "Truly, it is in the remembrance of God that hearts find peace."
+[
+  {
+    "wisdom": "Even the darkest night ends with the promise of dawn.",
+    "emotion": "sad"
   },
-  "forgiveness": {
-    "buddha": "Holding onto anger is like drinking poison and expecting the other person to die.",
-    "jesus": "Forgive them, for they know not what they do.",
-    "gita": "A wise person does not hate nor desire — he forgives and finds peace."
+  {
+    "wisdom": "Your soul is learning through sorrow; let it unfold gently.",
+    "emotion": "sad"
   },
-  "gratitude": {
-    "bible": "Give thanks in all circumstances; for this is God’s will for you.",
-    "veda": "Let us be grateful for the food, the hands that prepared it, and the divine source.",
-    "quran": "If you are grateful, I will surely increase you in favor."
+  {
+    "wisdom": "Sadness is not a weakness, it is a sacred reflection of your love.",
+    "emotion": "sad"
   },
-  "fear": {
-    "gita": "The soul is neither born nor does it die. Fear not what is eternal.",
-    "jesus": "Do not be afraid, for I am with you always.",
-    "quran": "Fear not, for indeed I am with you, hearing and seeing."
+  {
+    "wisdom": "Let your tears water the seeds of your strength.",
+    "emotion": "sad"
   },
-  "compassion": {
-    "buddha": "Radiate boundless love toward the entire world.",
-    "jesus": "Love your neighbor as yourself.",
-    "gita": "One who has no enemies among all beings is dear to Me."
+  {
+    "wisdom": "Every ending births a beginning in disguise.",
+    "emotion": "sad"
   },
-  "letting_go": {
-    "buddha": "You only lose what you cling to.",
-    "gita": "Renounce attachment to the results of your actions.",
-    "bible": "Cast your burdens upon the Lord and He will sustain you."
+  {
+    "wisdom": "In your stillness, healing begins.",
+    "emotion": "sad"
   },
-  "suffering": {
-    "buddha": "Pain is certain, suffering is optional.",
-    "quran": "Verily, with hardship comes ease.",
-    "gita": "The wise grieve neither for the living nor the dead."
+  {
+    "wisdom": "The divine holds you, especially when you feel broken.",
+    "emotion": "sad"
   },
-  "purpose": {
-    "gita": "It is better to live your own destiny imperfectly than to live another’s perfectly.",
-    "quran": "And I did not create mankind except to worship Me.",
-    "bible": "You are the light of the world. Let your light shine."
+  {
+    "wisdom": "You are not alone; the universe mourns with you.",
+    "emotion": "sad"
   },
-  "ego": {
-    "gita": "Those free from pride and ego, who remain unattached—attain peace.",
-    "buddha": "Conquer the angry one with love. The ego with generosity.",
-    "bible": "Whoever humbles himself will be exalted."
+  {
+    "wisdom": "Suffering softens the soul for deeper compassion.",
+    "emotion": "sad"
   },
-  "truth": {
-    "upanishads": "Truth alone triumphs; not falsehood.",
-    "jesus": "The truth will set you free.",
-    "quran": "And say: The truth has come, and falsehood has vanished."
+  {
+    "wisdom": "Crying is a spiritual release, not a sign of defeat.",
+    "emotion": "sad"
   },
-  "love": {
-    "bible": "Love is patient, love is kind. It always protects, always trusts.",
-    "gita": "He who sees all beings in the Self and the Self in all beings—such a person is full of love.",
-    "buddha": "Hatred does not cease by hatred, but only by love."
+  {
+    "wisdom": "There is purpose in your pain, even if unseen now.",
+    "emotion": "sad"
   },
-  "service": {
-    "gita": "By selfless service, one attains the highest goal.",
-    "jesus": "Whoever wants to be great must be your servant.",
-    "quran": "The best among you are those who are most beneficial to others."
+  {
+    "wisdom": "Through sadness, your spirit purifies itself.",
+    "emotion": "sad"
   },
-  "mindfulness": {
-    "buddha": "Do not dwell in the past; do not dream of the future; concentrate the mind on the present moment.",
-    "yoga_sutra": "Yoga is the stilling of the fluctuations of the mind.",
-    "bible": "Be still, and know that I am God."
+  {
+    "wisdom": "In the silence of grief, God whispers most clearly.",
+    "emotion": "sad"
   },
-  "divine_presence": {
-    "bible": "Even though I walk through the valley of the shadow of death, I will fear no evil.",
-    "gita": "I am the Self seated in the hearts of all beings.",
-    "quran": "We are closer to you than your jugular vein."
+  {
+    "wisdom": "Your wound is where the light enters. — Rumi",
+    "emotion": "sad"
   },
-  "self_discovery": {
-    "gita": "One must elevate oneself by one’s own mind, not degrade oneself.",
-    "buddha": "No one saves us but ourselves. We ourselves must walk the path.",
-    "upanishads": "You are that which you seek."
+  {
+    "wisdom": "Do not rush your healing; it's sacred work.",
+    "emotion": "sad"
   },
-  "faith": {
-    "bible": "Faith is the substance of things hoped for, the evidence of things not seen.",
-    "gita": "A person is what his faith is. Whatever is one’s faith, that he becomes.",
-    "quran": "Indeed, Allah is with those who have faith."
+  {
+    "wisdom": "Grief is a teacher sent from the heart of love.",
+    "emotion": "sad"
   },
-  "humility": {
-    "bible": "God opposes the proud but gives grace to the humble.",
-    "buddha": "To conquer oneself is a greater victory than to conquer thousands in a battle.",
-    "gita": "Humility, nonviolence, patience and honesty are the qualities of the wise."
+  {
+    "wisdom": "Let sorrow shape you, not shatter you.",
+    "emotion": "sad"
   },
-  "acceptance": {
-    "gita": "Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure.",
-    "buddha": "Accept what is, let go of what was, and have faith in what will be.",
-    "quran": "Perhaps you hate a thing and it is good for you."
+  {
+    "wisdom": "Even in despair, your breath is a miracle.",
+    "emotion": "sad"
   },
-  "trust": {
-    "bible": "Trust in the Lord with all your heart and lean not on your own understanding.",
-    "quran": "And whoever puts their trust in Allah – then He will be sufficient for them.",
-    "upanishads": "The Self cannot be known through study, only through trust and surrender."
+  {
+    "wisdom": "Rest in your sadness without judgment.",
+    "emotion": "sad"
   },
-  "healing": {
-    "jesus": "By His wounds, we are healed.",
-    "buddha": "Health is the greatest gift, contentment the greatest wealth.",
-    "ayurveda": "When diet is wrong, medicine is of no use. When diet is correct, medicine is of no need."
+  {
+    "wisdom": "Sadness is a shadow that reminds us of the light.",
+    "emotion": "sad"
   },
-  "non_attachment": {
-    "gita": "One who performs their duty without attachment is truly spiritual.",
-    "buddha": "Attachment is the root of suffering.",
-    "tao": "The master has no possessions. The more he does for others, the happier he is."
+  {
+    "wisdom": "You are growing even when it hurts.",
+    "emotion": "sad"
   },
-  "simplicity": {
-    "jesus": "Blessed are the pure in heart, for they shall see God.",
-    "tao_te_ching": "Manifest plainness, embrace simplicity, reduce selfishness, have few desires.",
-    "gita": "A person is dear to Me who is content, simple, and peaceful."
+  {
+    "wisdom": "The soul expands through experience, not escape.",
+    "emotion": "sad"
   },
-  "oneness": {
-    "upanishads": "There is no multiplicity in the Self. It is One without a second.",
-    "gita": "I am the source of all spiritual and material worlds.",
-    "quran": "He is One, eternal, absolute. He begets not, nor is He begotten."
+  {
+    "wisdom": "You are being carved into something more open, more aware.",
+    "emotion": "sad"
   },
-  "presence": {
-    "buddha": "The secret of health for both mind and body is not to mourn the past or worry about the future.",
-    "jesus": "Do not worry about tomorrow, for tomorrow will worry about itself.",
-    "zen": "When walking, walk. When eating, eat."
+  {
+    "wisdom": "Compassion is born from the ashes of sadness.",
+    "emotion": "sad"
   },
-  "balance": {
-    "gita": "Yoga is balance in action.",
-    "buddha": "Take the middle path — not too tight, not too loose.",
-    "tao": "Nature does not hurry, yet everything is accomplished."
+  {
+    "wisdom": "Your sadness is safe here. It belongs.",
+    "emotion": "sad"
   },
-  "joy": {
-    "gita": "Happiness comes not by desire’s fulfillment but by desire’s renunciation.",
-    "bible": "The joy of the Lord is your strength.",
-    "buddha": "Happiness never decreases by being shared."
+  {
+    "wisdom": "Joy is the soul’s natural state when it remembers its truth.",
+    "emotion": "happy"
   },
-  "intention": {
-    "buddha": "What you think, you become. What you feel, you attract. What you imagine, you create.",
-    "gita": "Man is made by his belief. As he believes, so he is.",
-    "quran": "Every deed is judged by the intention behind it."
+  {
+    "wisdom": "Happiness is not the goal — it’s the path.",
+    "emotion": "happy"
   },
-  "inner_light": {
-    "bible": "Let your light shine before others.",
-    "upanishads": "The Self is the light of all lights, shining within the heart.",
-    "gita": "That light which shines beyond all darkness is the divine Self."
+  {
+    "wisdom": "Let your joy overflow and bless the world.",
+    "emotion": "happy"
   },
-  "silence": {
-    "buddha": "Silence is the language of the wise.",
-    "gita": "He is a yogi who is content in silence, in solitude, and in his own Self.",
-    "tao": "Silence is a source of great strength."
+  {
+    "wisdom": "Smiling is an act of worship.",
+    "emotion": "happy"
   },
-  "death": {
-    "gita": "As a man discards old clothes and puts on new, so the soul discards the body and takes a new one.",
-    "bible": "To be absent from the body is to be present with the Lord.",
-    "buddha": "Every mortal thing comes to an end; only the truth remains."
+  {
+    "wisdom": "In your joy, the universe dances with you.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Happiness is the fragrance of gratitude.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Celebrate your being. Existence chose you.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Your joy is medicine — share it freely.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Let your happiness be a prayer in motion.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "True happiness is alignment with your spirit.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Gratitude opens the floodgates of joy.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Joy is the vibration of your highest self.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Let every laugh be a sacred offering.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "You are allowed to shine.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Happiness is not selfish — it is spiritual.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "The soul rejoices when you follow what you love.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Play is divine expression.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "You are the light you seek in others.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "A joyful heart is a sign of trust in life.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Your bliss is your compass.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Every smile brings healing to the world.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Let happiness soften your mind and awaken your heart.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Happiness isn't found — it's remembered.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Let joy flow where fear once lived.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "You are joy embodied. Live it fully.",
+    "emotion": "happy"
+  },
+  {
+    "wisdom": "Anger is energy. Transform it into something sacred.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Breathe before you burn. Your fire can heal or hurt.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Anger shows where your boundaries are crying.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Let the fire of anger be your teacher, not your master.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "You are not your rage — you are its observer.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Use your voice, but root it in peace.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Every sacred warrior learns to pause.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Channel your anger into purpose, not poison.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Behind your fury may be a wound asking to be held.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "When you own your anger, it loses power over you.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Righteous anger is not hate — it's divine protection.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Let your anger rise and fall like waves, not wildfires.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "You are safe to feel — but not to be consumed.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Transform resentment into sacred responsibility.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Stillness is strength when your heart roars.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Anger signals something sacred is being ignored.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Silence is sometimes louder than screaming.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Be fierce — but never forget compassion.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Let your fire forge a better future.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Anger is heat. Forge peace from it.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "React less. Respond more.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Speak from your pain, but not with it.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Anger is a tool, not a home.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "Honor the message beneath your rage.",
+    "emotion": "angry"
+  },
+  {
+    "wisdom": "You have the strength to be both fiery and kind.",
+    "emotion": "angry"
   }
-}
+]

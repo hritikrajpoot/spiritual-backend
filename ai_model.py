@@ -1,94 +1,98 @@
+import random
 import json
 import os
-from textblob import TextBlob
-from dotenv import load_dotenv
-import openai
 
-# Load .env API Key
-load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-# Load spiritual wisdom data
+# Load spiritual wisdom quotes
 def load_wisdom():
-    with open("knowledge_base/spiritual_wisdom.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+    path = os.path.join("knowledge_base", "spiritual_wisdom.json")
+    with open(path, "r", encoding="utf-8") as file:
+        return json.load(file)
 
 wisdom_data = load_wisdom()
 
-# Detect emotion from user input
-def detect_emotion(text):
-    blob = TextBlob(text)
-    polarity = blob.sentiment.polarity
+# Define emotion categories with sample keywords
+emotion_keywords = {
+    "sad": ["lost", "empty", "alone", "tired", "hopeless", "cry", "meaningless", "broken"],
+    "anxious": ["nervous", "worried", "anxious", "overthinking", "stressed", "panic"],
+    "angry": ["angry", "mad", "furious", "frustrated", "annoyed"],
+    "happy": ["joyful", "happy", "grateful", "excited", "blessed"],
+    "confused": ["confused", "unsure", "unclear", "no direction"],
+    "motivated": ["driven", "hopeful", "motivated", "ready", "ambitious"],
+    "lonely": ["lonely", "no one", "abandoned", "isolated", "ignored"],
+    "spiritual": ["soul", "spiritual", "consciousness", "inner peace", "divine", "enlightened"]
+}
 
-    if polarity > 0.3:
-        return "positive"
-    elif polarity < -0.3:
-        return "negative"
-    else:
-        return "neutral"
+# Emotion-based response templates
+emotion_responses = {
+    "sad": [
+        "I feel your pain. Sometimes, allowing yourself to feel is the path to healing.",
+        "Even the darkest nights end. Here's something from the Gita: 'In grief, remain steady like a rock.'"
+    ],
+    "anxious": [
+        "Breathe gently. You are safe in this moment. Would you like a calming practice?",
+        "Let go of what you can't control. You are doing your best — and that's enough."
+    ],
+    "angry": [
+        "Anger is valid, but you don't have to hold onto it. Let's transform this fire into clarity.",
+        "You are heard. Would you like to explore what's beneath the anger?"
+    ],
+    "happy": [
+        "That’s beautiful! Cherish this energy and pass it on.",
+        "Let your joy be a light to others. 😊"
+    ],
+    "confused": [
+        "It’s okay not to have it all figured out. Let’s walk through it together.",
+        "When you're unsure, listen to your inner stillness — that's where clarity lives."
+    ],
+    "motivated": [
+        "You’re on the right path. What would you like to create today?",
+        "Your light is strong. Let’s channel it toward purpose."
+    ],
+    "lonely": [
+        "You are not alone. I’m here with you. Would you like some spiritual companionship?",
+        "Your presence matters. Let’s find warmth in this moment together."
+    ],
+    "spiritual": [
+        "The soul always seeks truth. Let me offer you a verse from ancient wisdom.",
+        "Let’s expand your awareness. Which path calls to you — peace, growth, or healing?"
+    ]
+}
 
-# Suggest spiritual topic based on keywords
-def get_topic_from_text(text):
-    keywords = {
-        "peace": "inner_peace",
-        "calm": "inner_peace",
-        "angry": "forgiveness",
-        "hurt": "forgiveness",
-        "thank": "gratitude",
-        "grateful": "gratitude",
-        "fear": "fear",
-        "love": "love",
-        "compassion": "compassion",
-        "sad": "suffering",
-        "pain": "suffering",
-        "ego": "ego",
-        "truth": "truth",
-        "lost": "purpose",
-        "why": "purpose",
-        "anxious": "mindfulness",
-        "present": "mindfulness",
-        "change": "letting_go",
-        "control": "letting_go"
-    }
+# Fallback wisdom response
+def get_random_wisdom():
+    return random.choice(wisdom_data)["wisdom"]
 
-    for word in text.lower().split():
-        if word in keywords:
-            return keywords[word]
-    return "inner_peace"  # default
+# Detect emotion from input
+def detect_emotion(user_input):
+    user_input = user_input.lower()
+    for emotion, keywords in emotion_keywords.items():
+        for word in keywords:
+            if word in user_input:
+                return emotion
+    return None
 
-# Get spiritual response from knowledge base
-def get_spiritual_reply(topic):
-    if topic in wisdom_data:
-        quotes = wisdom_data[topic]
-        selected_quote = list(quotes.values())[0]
-        return f"Here is some wisdom on '{topic.replace('_', ' ')}':\n💬 \"{selected_quote}\""
-    else:
-        return None
-
-# Optionally generate from OpenAI if topic not found
-def get_gpt_reply(user_input):
-    try:
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "You are a wise spiritual assistant who gives compassionate, interfaith advice using quotes and calming suggestions."},
-                {"role": "user", "content": user_input}
-            ],
-            temperature=0.7,
-            max_tokens=150
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        return "Sorry, I couldn't connect to the wisdom source right now."
-
-# MAIN RESPONSE FUNCTION
+# Generate AI response
 def generate_response(user_input):
     emotion = detect_emotion(user_input)
-    topic = get_topic_from_text(user_input)
-
-    spiritual_message = get_spiritual_reply(topic)
     
-    if spiritual_message:
-        return f"🌟 Emotion detected: *{emotion}*\n{spiritual_message}"
+    if emotion:
+        response = random.choice(emotion_responses[emotion])
+        return f"💬 ({emotion.upper()} detected): {response}"
     else:
-        return get_gpt_reply(user_input)
+        # Default fallback to wisdom
+        return f"🌟 Here's something that may help:\n“{get_random_wisdom()}”"
+
+# For local test
+if __name__ == "__main__":
+    test_inputs = [
+        "I feel lost and broken",
+        "I'm so excited for my future!",
+        "Nobody listens to me",
+        "I’m confused about my life direction",
+        "I’m having an anxiety attack",
+        "My heart feels empty"
+    ]
+    for text in test_inputs:
+        print(f"User: {text}")
+        print("AI:", generate_response(text))
+        print("------")
