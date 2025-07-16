@@ -1,0 +1,153 @@
+{
+  "inner_peace": {
+    "buddha": "Peace comes from within. Do not seek it without.",
+    "gita": "One who is not disturbed by joy or sorrow is steady in mind.",
+    "jesus": "My peace I give you. Do not let your hearts be troubled.",
+    "quran": "Truly, it is in the remembrance of God that hearts find peace."
+  },
+  "forgiveness": {
+    "buddha": "Holding onto anger is like drinking poison and expecting the other person to die.",
+    "jesus": "Forgive them, for they know not what they do.",
+    "gita": "A wise person does not hate nor desire — he forgives and finds peace."
+  },
+  "gratitude": {
+    "bible": "Give thanks in all circumstances; for this is God’s will for you.",
+    "veda": "Let us be grateful for the food, the hands that prepared it, and the divine source.",
+    "quran": "If you are grateful, I will surely increase you in favor."
+  },
+  "fear": {
+    "gita": "The soul is neither born nor does it die. Fear not what is eternal.",
+    "jesus": "Do not be afraid, for I am with you always.",
+    "quran": "Fear not, for indeed I am with you, hearing and seeing."
+  },
+  "compassion": {
+    "buddha": "Radiate boundless love toward the entire world.",
+    "jesus": "Love your neighbor as yourself.",
+    "gita": "One who has no enemies among all beings is dear to Me."
+  },
+  "letting_go": {
+    "buddha": "You only lose what you cling to.",
+    "gita": "Renounce attachment to the results of your actions.",
+    "bible": "Cast your burdens upon the Lord and He will sustain you."
+  },
+  "suffering": {
+    "buddha": "Pain is certain, suffering is optional.",
+    "quran": "Verily, with hardship comes ease.",
+    "gita": "The wise grieve neither for the living nor the dead."
+  },
+  "purpose": {
+    "gita": "It is better to live your own destiny imperfectly than to live another’s perfectly.",
+    "quran": "And I did not create mankind except to worship Me.",
+    "bible": "You are the light of the world. Let your light shine."
+  },
+  "ego": {
+    "gita": "Those free from pride and ego, who remain unattached—attain peace.",
+    "buddha": "Conquer the angry one with love. The ego with generosity.",
+    "bible": "Whoever humbles himself will be exalted."
+  },
+  "truth": {
+    "upanishads": "Truth alone triumphs; not falsehood.",
+    "jesus": "The truth will set you free.",
+    "quran": "And say: The truth has come, and falsehood has vanished."
+  },
+  "love": {
+    "bible": "Love is patient, love is kind. It always protects, always trusts.",
+    "gita": "He who sees all beings in the Self and the Self in all beings—such a person is full of love.",
+    "buddha": "Hatred does not cease by hatred, but only by love."
+  },
+  "service": {
+    "gita": "By selfless service, one attains the highest goal.",
+    "jesus": "Whoever wants to be great must be your servant.",
+    "quran": "The best among you are those who are most beneficial to others."
+  },
+  "mindfulness": {
+    "buddha": "Do not dwell in the past; do not dream of the future; concentrate the mind on the present moment.",
+    "yoga_sutra": "Yoga is the stilling of the fluctuations of the mind.",
+    "bible": "Be still, and know that I am God."
+  },
+  "divine_presence": {
+    "bible": "Even though I walk through the valley of the shadow of death, I will fear no evil.",
+    "gita": "I am the Self seated in the hearts of all beings.",
+    "quran": "We are closer to you than your jugular vein."
+  },
+  "self_discovery": {
+    "gita": "One must elevate oneself by one’s own mind, not degrade oneself.",
+    "buddha": "No one saves us but ourselves. We ourselves must walk the path.",
+    "upanishads": "You are that which you seek."
+  },
+  "faith": {
+    "bible": "Faith is the substance of things hoped for, the evidence of things not seen.",
+    "gita": "A person is what his faith is. Whatever is one’s faith, that he becomes.",
+    "quran": "Indeed, Allah is with those who have faith."
+  },
+  "humility": {
+    "bible": "God opposes the proud but gives grace to the humble.",
+    "buddha": "To conquer oneself is a greater victory than to conquer thousands in a battle.",
+    "gita": "Humility, nonviolence, patience and honesty are the qualities of the wise."
+  },
+  "acceptance": {
+    "gita": "Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure.",
+    "buddha": "Accept what is, let go of what was, and have faith in what will be.",
+    "quran": "Perhaps you hate a thing and it is good for you."
+  },
+  "trust": {
+    "bible": "Trust in the Lord with all your heart and lean not on your own understanding.",
+    "quran": "And whoever puts their trust in Allah – then He will be sufficient for them.",
+    "upanishads": "The Self cannot be known through study, only through trust and surrender."
+  },
+  "healing": {
+    "jesus": "By His wounds, we are healed.",
+    "buddha": "Health is the greatest gift, contentment the greatest wealth.",
+    "ayurveda": "When diet is wrong, medicine is of no use. When diet is correct, medicine is of no need."
+  },
+  "non_attachment": {
+    "gita": "One who performs their duty without attachment is truly spiritual.",
+    "buddha": "Attachment is the root of suffering.",
+    "tao": "The master has no possessions. The more he does for others, the happier he is."
+  },
+  "simplicity": {
+    "jesus": "Blessed are the pure in heart, for they shall see God.",
+    "tao_te_ching": "Manifest plainness, embrace simplicity, reduce selfishness, have few desires.",
+    "gita": "A person is dear to Me who is content, simple, and peaceful."
+  },
+  "oneness": {
+    "upanishads": "There is no multiplicity in the Self. It is One without a second.",
+    "gita": "I am the source of all spiritual and material worlds.",
+    "quran": "He is One, eternal, absolute. He begets not, nor is He begotten."
+  },
+  "presence": {
+    "buddha": "The secret of health for both mind and body is not to mourn the past or worry about the future.",
+    "jesus": "Do not worry about tomorrow, for tomorrow will worry about itself.",
+    "zen": "When walking, walk. When eating, eat."
+  },
+  "balance": {
+    "gita": "Yoga is balance in action.",
+    "buddha": "Take the middle path — not too tight, not too loose.",
+    "tao": "Nature does not hurry, yet everything is accomplished."
+  },
+  "joy": {
+    "gita": "Happiness comes not by desire’s fulfillment but by desire’s renunciation.",
+    "bible": "The joy of the Lord is your strength.",
+    "buddha": "Happiness never decreases by being shared."
+  },
+  "intention": {
+    "buddha": "What you think, you become. What you feel, you attract. What you imagine, you create.",
+    "gita": "Man is made by his belief. As he believes, so he is.",
+    "quran": "Every deed is judged by the intention behind it."
+  },
+  "inner_light": {
+    "bible": "Let your light shine before others.",
+    "upanishads": "The Self is the light of all lights, shining within the heart.",
+    "gita": "That light which shines beyond all darkness is the divine Self."
+  },
+  "silence": {
+    "buddha": "Silence is the language of the wise.",
+    "gita": "He is a yogi who is content in silence, in solitude, and in his own Self.",
+    "tao": "Silence is a source of great strength."
+  },
+  "death": {
+    "gita": "As a man discards old clothes and puts on new, so the soul discards the body and takes a new one.",
+    "bible": "To be absent from the body is to be present with the Lord.",
+    "buddha": "Every mortal thing comes to an end; only the truth remains."
+  }
+}
