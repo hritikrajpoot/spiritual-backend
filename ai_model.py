@@ -1,98 +1,97 @@
-import random
 import json
+import random
 import os
 
-# Load spiritual wisdom quotes
-def load_wisdom():
-    path = os.path.join("knowledge_base", "spiritual_wisdom.json")
-    with open(path, "r", encoding="utf-8") as file:
-        return json.load(file)
+# Load wisdom data
+with open("knowledge_base/spiritual_wisdom.json", "r", encoding="utf-8") as f:
+    wisdom_data = json.load(f)
 
-wisdom_data = load_wisdom()
+# Load or create user profiles
+profiles_path = "user_profiles.json"
+if os.path.exists(profiles_path):
+    with open(profiles_path, "r", encoding="utf-8") as f:
+        user_profiles = json.load(f)
+else:
+    user_profiles = []
 
-# Define emotion categories with sample keywords
+# Emotion detection keywords
 emotion_keywords = {
-    "sad": ["lost", "empty", "alone", "tired", "hopeless", "cry", "meaningless", "broken"],
-    "anxious": ["nervous", "worried", "anxious", "overthinking", "stressed", "panic"],
-    "angry": ["angry", "mad", "furious", "frustrated", "annoyed"],
-    "happy": ["joyful", "happy", "grateful", "excited", "blessed"],
-    "confused": ["confused", "unsure", "unclear", "no direction"],
-    "motivated": ["driven", "hopeful", "motivated", "ready", "ambitious"],
-    "lonely": ["lonely", "no one", "abandoned", "isolated", "ignored"],
-    "spiritual": ["soul", "spiritual", "consciousness", "inner peace", "divine", "enlightened"]
+    "sad": ["lost", "broken", "cry", "grief", "alone", "empty", "depressed"],
+    "happy": ["joy", "grateful", "excited", "love", "peaceful", "blessed"],
+    "angry": ["angry", "mad", "furious", "rage", "irritated", "frustrated"],
+    "anxious": ["anxious", "worried", "nervous", "tense", "afraid", "panic"],
+    "confused": ["confused", "unclear", "lost", "unsure", "doubt", "chaos"],
+    "motivated": ["motivated", "inspired", "driven", "determined", "focused"],
+    "peaceful": ["calm", "peaceful", "relaxed", "still", "quiet", "balanced"],
+    "lonely": ["lonely", "isolated", "abandoned", "ignored", "unseen"],
+    "grateful": ["thankful", "grateful", "appreciate", "blessed", "abundant"],
+    "hopeful": ["hope", "positive", "faith", "believe", "bright", "trust"]
 }
 
-# Emotion-based response templates
-emotion_responses = {
-    "sad": [
-        "I feel your pain. Sometimes, allowing yourself to feel is the path to healing.",
-        "Even the darkest nights end. Here's something from the Gita: 'In grief, remain steady like a rock.'"
-    ],
-    "anxious": [
-        "Breathe gently. You are safe in this moment. Would you like a calming practice?",
-        "Let go of what you can't control. You are doing your best — and that's enough."
-    ],
-    "angry": [
-        "Anger is valid, but you don't have to hold onto it. Let's transform this fire into clarity.",
-        "You are heard. Would you like to explore what's beneath the anger?"
-    ],
-    "happy": [
-        "That’s beautiful! Cherish this energy and pass it on.",
-        "Let your joy be a light to others. 😊"
-    ],
-    "confused": [
-        "It’s okay not to have it all figured out. Let’s walk through it together.",
-        "When you're unsure, listen to your inner stillness — that's where clarity lives."
-    ],
-    "motivated": [
-        "You’re on the right path. What would you like to create today?",
-        "Your light is strong. Let’s channel it toward purpose."
-    ],
-    "lonely": [
-        "You are not alone. I’m here with you. Would you like some spiritual companionship?",
-        "Your presence matters. Let’s find warmth in this moment together."
-    ],
-    "spiritual": [
-        "The soul always seeks truth. Let me offer you a verse from ancient wisdom.",
-        "Let’s expand your awareness. Which path calls to you — peace, growth, or healing?"
-    ]
-}
-
-# Fallback wisdom response
-def get_random_wisdom():
-    return random.choice(wisdom_data)["wisdom"]
-
-# Detect emotion from input
-def detect_emotion(user_input):
-    user_input = user_input.lower()
+# Detect emotion from text
+def detect_emotion(text):
+    text = text.lower()
     for emotion, keywords in emotion_keywords.items():
         for word in keywords:
-            if word in user_input:
+            if word in text:
                 return emotion
-    return None
+    return "neutral"
+
+# Get a spiritual quote by emotion
+def get_quote_by_emotion(emotion):
+    filtered = [item["wisdom"] for item in wisdom_data if item["emotion"] == emotion]
+    if filtered:
+        return random.choice(filtered)
+    return random.choice(wisdom_data)["wisdom"]
+
+# Save user profiles
+def save_profiles():
+    with open(profiles_path, "w", encoding="utf-8") as f:
+        json.dump(user_profiles, f, indent=2, ensure_ascii=False)
+
+# Get or create a profile
+def get_user_profile(username):
+    for profile in user_profiles:
+        if profile["username"] == username:
+            return profile
+    new_profile = {
+        "username": username,
+        "emotion_history": [],
+        "streak": 0,
+        "last_emotion": "",
+        "personal_notes": ""
+    }
+    user_profiles.append(new_profile)
+    return new_profile
 
 # Generate AI response
-def generate_response(user_input):
-    emotion = detect_emotion(user_input)
-    
-    if emotion:
-        response = random.choice(emotion_responses[emotion])
-        return f"💬 ({emotion.upper()} detected): {response}"
-    else:
-        # Default fallback to wisdom
-        return f"🌟 Here's something that may help:\n“{get_random_wisdom()}”"
+def generate_response(text, username="default_user"):
+    emotion = detect_emotion(text)
+    profile = get_user_profile(username)
 
-# For local test
+    # Update profile
+    profile["emotion_history"].append(emotion)
+    profile["last_emotion"] = emotion
+    profile["streak"] += 1
+    save_profiles()
+
+    # Get wisdom quote
+    quote = get_quote_by_emotion(emotion)
+    response = f"💬 ({emotion.upper()} detected): {quote}"
+
+    # Personal suggestions
+    if profile["streak"] >= 5:
+        response += f"\n🌱 You're on a 5-day spiritual streak. Keep it up with a short meditation!"
+    if profile["emotion_history"][-3:] == [emotion]*3:
+        response += f"\n✨ You've been feeling a lot of '{emotion}' lately. Would you like help exploring it?"
+
+    return response
+
+# For testing
 if __name__ == "__main__":
-    test_inputs = [
-        "I feel lost and broken",
-        "I'm so excited for my future!",
-        "Nobody listens to me",
-        "I’m confused about my life direction",
-        "I’m having an anxiety attack",
-        "My heart feels empty"
-    ]
-    for text in test_inputs:
-        print(f"User: {text}")
-        print("AI:", generate_response(text))
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() in ["exit", "quit"]:
+            break
+        print("AI:", generate_response(user_input))
         print("------")

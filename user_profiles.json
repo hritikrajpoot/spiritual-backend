@@ -1,0 +1,20 @@
+[
+  {
+    "username": "default_user",
+    "emotion_history": [
+      "sad",
+      "confused",
+      "neutral",
+      "angry",
+      "neutral",
+      "neutral",
+      "neutral",
+      "neutral",
+      "neutral",
+      "anxious"
+    ],
+    "streak": 10,
+    "last_emotion": "anxious",
+    "personal_notes": "Feels lost often. Needs grounding."
+  }
+]
